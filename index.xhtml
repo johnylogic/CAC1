@@ -1,12 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
     
+    <title>Christ University Feedback Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body background="assets/images/formbg.jpg">
+    <h1 class="my-lg-5 my-4 text-white text-4xl py-12" style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+        &nbsp; &nbsp; &nbsp; Feedback Form on Campus Visit</h1>
+    <div class=" container animate__animated animate__backInRight mx-10 px-4" style="padding: 0; ">
+        <div class="grid grid-cols-4 gap-6">
+            <div  class="col-span-6 sm:col-span-1">
+            </div>
+            <div class="col-span-6 sm:col-span-2 mx-10 px-4 mt-2 shadow-lg" style=" background-color: rgb(235, 212, 109); border-radius: 10px;">
+                <div class="images my-3 pl-3 img-fluid"  style="padding-left: 10px;">
+                    <img src="assets/images/campusemblem.jpg" style="height: 100%; width: max-content; border-radius: 10px;"/>
+                </div>
+                <div class="mx-3 md:mt-0 md:col-span-2">
+                    <form action="home.xhtml" method="">
+                        <div class="p-5 mb-5 bg-light rounded" style=" background-color:rgb(255, 255, 255); border-radius: 10px;">
+                            <div class="bg-red sm:p-6">
+                                <div class="grid grid-cols-2 gap-6">
+
+                                    <div class="col-span-12 sm:col-span-3">
+                                        <label for="email-address" class="block text-lg font-medium text-black-700">
+                                            Email address</label>
+                                        <input type="email" name="email-address" id="email-address" autocomplete="email" placeholder="yourname@christuniversity.in"
+                                            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-lg sm:text-sm border-gray-300 rounded-md"
+                                            style="height: 20px; font-size: medium; padding: 20px 20px; border: 2px solid blue" />
+                                    </div>
+
+                                    <div class="col-span-12 sm:col-span-3">
+                                        <label for="password" class="block text-lg font-medium text-black-700">
+                                            Password</label>
+                                        <input type="password" name="pwd1" id="password"
+                                            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-lg sm:text-sm border-gray-300 rounded-md"
+                                            placeholder="Your password"
+                                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" onchange="form.pwd2.pattern = RegExp.escape(this.value);"
+                                            style="height: 20px; font-size: medium; padding: 20px 20px; border: 2px solid blue" />
+                                    </div>
+                                    
+                                    <div class="col-span-12 sm:col-span-3">
+                                    <button type="submit"
+                                        class="justify-center inline-flex w-full bg-indigo-600 mt-4 py-2 rounded-2xl text-white font-semibold mb-2 text-xl">Login</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
