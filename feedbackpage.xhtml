@@ -6,9 +6,9 @@
     <title> Christ University Feedback form </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
         referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css" />
+    
+    <script src="main.js" /> 
 </head>
-
 <style>
     body{
     margin:0;
@@ -26,7 +26,7 @@
     float: left;
     width: 33.33%;
     padding: px;
-    height: 1150px; /* Should be removed. Only for demonstration */
+    height: 1250px; /* Should be removed. Only for demonstration */
     }
 
     /* Clear floats after the columns */
@@ -53,29 +53,30 @@
    
    input[type="radio"]:checked + label{
       color: #00325a; 
-   }
+   } 
 </style>
-<body>
+
+<body background="assets/images/formbg.jpg">
     <div class="container">
         <div class="row">
             <!-- 1st Column -->
-            <div class="column" style="background-color:blue;"></div>
+            <div class="column"></div>
             <!-- 2nd Column -->
-            <div class="column" style="background-color:blue;">
-                <div class="mt-2" style="border-radius: 5px; box-shadow: aqua;">
-                    <form class="bg-white" style=" padding: 1rem; border-radius:10px">
-                        <img src="assets/images/logocroped.jpg" style="border-radius:10px; border-color:blue; border-width:10px;" />
+            <div class="column shadow-lg" style="background-color: 0;">
+                <div class="mt-3 mb-4" style="border-radius: 5px;">
+                    <form class="bg-white shadow-lg" style=" padding: 1rem; border-radius:10px">
+                        <img src="assets/images/logocroped.jpg" style="border-radius:10px; border-color:rgb(206, 175, 39); border-width:7px;" />
                         <center>
-                            <h1 class="text-gray-800 font-bold text-2xl mt-2 font-medium">
+                            <h1 class="font-bold text-2xl mt-2 font-medium " style="color: red;">
                                 Hello Again!
                             </h1>
-                            <p class="text-sm font-normal text-gray-600 mb-7">
+                            <p class="text-md font-normal text-gray-600 mb-7">
                                 We would like your honest Feedback on the campus visit.😄
                             </p>
                         </center>
 
                         <!--Box for name and email-->
-                        <div class="border-4 px-2 py-3" style="border-radius: 10px;">
+                        <div class="border-4 px-2 py-3 shadow-lg" style="border-radius: 10px;">
                             <label for="fullname" class="block text-lg font-medium text-black-700">
                                 Name: </label>
                             <div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
@@ -84,7 +85,7 @@
                                     <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                <input class="pl-2 outline-none border-none" type="text" name="" id="" placeholder="Full name" />
+                                <input class="pl-2 outline-none border-none" type="text" name="" id="" placeholder="Full name"/>
                             </div>
 
                             <div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
@@ -104,7 +105,7 @@
                         </div>
                     
                         <!--box for selection-->
-                        <div class="mt-3 text-align border-4 px-2 py-3" style="border-radius: 10px;">
+                        <div class="mt-3 text-align border-4 px-2 py-3 shadow-lg" style="border-radius: 10px;">
                             <label class="font-bold text-lg text-black ">
                                 What did you like about the campus?</label>
                             <div>
@@ -145,7 +146,8 @@
                             </div>
                         </div>
                         
-                        <div class="mt-3 text-align border-4 px-2 py-3" style="border-radius: 10px;">
+                        <!--3rd box-->
+                        <div class="mt-3 text-align border-4 px-2 py-3 shadow-lg" style="border-radius: 10px;">
                             <label class="font-bold text-lg text-black ">How did you become interested in
                                 the university?</label>
                             <div class="flex items-center mr-4 mb-4">
@@ -181,25 +183,26 @@
                             </div>
                         </div>
                     
-                        <div>
-                            <label class="text-black dark:text-gray-200"
-                                for="passwordConfirmation">Additional Comments..</label>
+                        <div class="mt-3">
+                            <label class="font-bold text-lg text-black ">
+                                Additional Comments..</label>
                             <textarea id="textarea" type="textarea"
-                                class="border w-full rounded-lg py-3 px-3 mt-4 bg-white border-indigo-600 placeholder-white-500 text-black"></textarea>
+                                class="border w-full rounded-lg  px-3 box-sizing  mt bg-white border-indigo-600 placeholder-white-500 text-black shadow-lg"></textarea>
                         </div>
-                    
-                        <input type="submit" name="Validate" onclick="test_str()"
-                            class="border border-indigo-600 bg-blue-900 text-white rounded-lg py-3 font-semibold"
-                            value="Submit" />
-                        <button name="reset" onclick="reset()"
-                            class="border border-indigo-600 bg-blue-900 text-white rounded-lg py-3 font-semibold"> 
-                            Reset 
-                        </button>
+                        <div>
+                            <input type="submit" name="Validate" onclick="test_str()"
+                                class="justify-center inline-flex w-full bg-blue-900 mt-4 py-2 rounded-2xl text-white font-semibold mb-2 text-xl shadow-lg"
+                                value="Submit" />
+                            <button name="reset" onclick="reset()"
+                                class="justify-center inline-flex w-full bg-blue-900 mt-4 py-2 rounded-2xl text-white font-semibold mb-2 text-xl shadow-lg"> 
+                                Reset 
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
             <!-- Column 3-->
-            <div class="column" style="background-color: blue;"></div>
+            <div class="column"></div>
         </div>
 
             
