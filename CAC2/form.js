@@ -77,6 +77,11 @@ user_age.addEventListener('keydown', (e)=>{
                 validate_span.style.color = 'red'
                 validate_span.innerHTML = 'Age cannot be 10'
             }
+            else if(x < 0)
+            {
+                validate_span.style.color = 'red'
+                validate_span.innerHTML = 'Age cannot be Negative'
+            }
             else
             {
                 validate_span.style.color = 'green'
